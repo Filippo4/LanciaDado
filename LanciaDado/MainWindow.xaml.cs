@@ -43,5 +43,11 @@ namespace LanciaDado
                 MessageBox.Show("il numero non è valido","Attenzione",MessageBoxButton.OK,MessageBoxImage.Hand);
             }
         }
+
+        private void BtnReset_Click(object sender, RoutedEventArgs e)
+        {
+            TxtNumero.Clear();
+            TxtNumero.Clear();
+        }
     }
 }

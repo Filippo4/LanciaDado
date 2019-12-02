@@ -20,7 +20,7 @@
         </TextBox>
         <Label Content="   Inserisci un numero da 1 a 6" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="305" Height="41" FontSize="18" FontWeight="Bold" Foreground="Cyan"/>
         <Button x:Name="BtnLancia" Content="Lancia il dado" HorizontalAlignment="Left" Margin="465,50,0,0" VerticalAlignment="Top" Width="185" Height="41" FontSize="20" Background="#FF6B85FB" Click="LanciaIlDado_Click"/>
-        <Button x:Name="BtnReset" Content="Ricomincia " HorizontalAlignment="Left" Margin="465,118,0,0" VerticalAlignment="Top" Width="185" Height="42" FontSize="20">
+        <Button x:Name="BtnReset" Content="Ricomincia " HorizontalAlignment="Left" Margin="465,118,0,0" VerticalAlignment="Top" Width="185" Height="42" FontSize="20" Click="BtnReset_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
