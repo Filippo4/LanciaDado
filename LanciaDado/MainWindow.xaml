@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FF15ADF3">
-        <TextBox x:Name="TxtRisultato" IsReadOnly="True" HorizontalAlignment="Left" Height="190" Margin="20,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="725" Background="#FF6B85FB"/>
-        <TextBox x:Name="TxtNumero" HorizontalAlignment="Left" Height="49" Margin="30,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" RenderTransformOrigin="0.5,0.5" SelectionBrush="{x:Null}" Background="#FF6B85FB">
+        <TextBox x:Name="TxtRisultato" IsReadOnly="True" HorizontalAlignment="Left" Height="145" Margin="253,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="492" Background="#FF6B85FB" Foreground="Cyan" FontSize="18"/>
+        <TextBox x:Name="TxtNumero" HorizontalAlignment="Left" Height="49" Margin="25,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" RenderTransformOrigin="0.5,0.5" SelectionBrush="{x:Null}" Background="#FF6B85FB" Foreground="Cyan" FontSize="18">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -18,9 +18,9 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label Content="   Inserisci un numero da 1 a 6" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="305" Height="41" FontSize="18" FontWeight="Bold" Foreground="Cyan"/>
-        <Button x:Name="BtnLancia" Content="Lancia il dado" HorizontalAlignment="Left" Margin="465,50,0,0" VerticalAlignment="Top" Width="185" Height="41" FontSize="20" Background="#FF6B85FB" Click="LanciaIlDado_Click"/>
-        <Button x:Name="BtnReset" Content="Ricomincia " HorizontalAlignment="Left" Margin="465,118,0,0" VerticalAlignment="Top" Width="185" Height="42" FontSize="20" Click="BtnReset_Click">
+        <Label Content="   Inserisci un numero da 1 a 6" HorizontalAlignment="Left" Margin="-10,84,0,0" VerticalAlignment="Top" Width="305" Height="41" FontSize="18" FontWeight="Bold" Foreground="Cyan"/>
+        <Button x:Name="BtnLancia" Content="Lancia il dado" HorizontalAlignment="Left" Margin="300,130,0,0" VerticalAlignment="Top" Width="170" Height="41" FontSize="20" Background="#FF6B85FB" Click="LanciaIlDado_Click" RenderTransformOrigin="1.892,-1.585" Foreground="#FF09FFFF"/>
+        <Button x:Name="BtnReset" Content="Ricomincia " HorizontalAlignment="Left" Margin="300,200,0,0" VerticalAlignment="Top" Width="170" Height="42" FontSize="20" Click="BtnReset_Click" Foreground="#FF09FFFF">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -30,6 +30,21 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <Label Content="Credito&#xD;&#xA;" HorizontalAlignment="Left" Margin="545,10,0,0" VerticalAlignment="Top" Width="80" Height="35" FontSize="18" Foreground="Cyan"/>
+        <Label x:Name="Lbl_credito" Content="150" HorizontalAlignment="Left" Height="29" Margin="610,10,0,0" VerticalAlignment="Top" Width="95" FontSize="18" Background="#00000000" Foreground="Cyan"/>
+        <TextBox x:Name="Txt_Puntata" HorizontalAlignment="Left" Height="50" Margin="545,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="#FF6B85FB" Foreground="Cyan" FontSize="18"/>
+        <Label Content="Inserire quanto vuoi puntare " HorizontalAlignment="Left" Margin="517,69,0,0" VerticalAlignment="Top" Width="275" Foreground="#FF09FFFF" Height="36" FontWeight="Bold" FontSize="18"/>
+        <Label Content="(La vincita viene quadruplicata)" HorizontalAlignment="Left" Margin="555,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="175" Foreground="Cyan">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.843"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Image x:Name="Img_Dado" HorizontalAlignment="Left" Height="145" Margin="40,247,0,0" VerticalAlignment="Top" Width="170"/>
 
     </Grid>
 </Window>
